@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  color: #202124;
+  background: #f8f9fa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #fbbc04;
+  --primary-hover: #f5b800;
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --text: #202124;
+  --muted: #70757a;
+  --border: #e5e7eb;
+  --sidebar-hover: #f1f3f4;
+  --shadow: 0 2px 8px rgba(60, 64, 67, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #d99b00;
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Dark theme */
+
+.dark-theme {
+  --background: #202124;
+  --surface: #292a2d;
+  --text: #e8eaed;
+  --muted: #9aa0a6;
+  --border: #3c4043;
+  --sidebar-hover: #35363a;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme body {
+  background: var(--background);
+  color: var(--text);
+}
+
+::selection {
+  background: #fff0b3;
+  color: #202124;
+}
